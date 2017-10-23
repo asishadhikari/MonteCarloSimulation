@@ -18,5 +18,5 @@ Conduct n number of walk trails and compute on average the percentage of walks t
 
 
 ## To Dos:
-	- [X] Implement in python 
-	- [ ] Implement in C++
+- [X] Implement in python 
+- [ ] Implement in C++
