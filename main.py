@@ -40,5 +40,5 @@ for x in stats:
 	print(x)
 
 print("The highest walking value can be obtained by walking ", key, " blocks.")
-print("By walking ",key," blocks, you can expect to walk ", stats[key][1]," blocks while \
-			expecting to pay", stats[key][2]," dollars for Lyft.")
+print("By walking ",key," blocks, you can expect to walk ", stats[key][1]," blocks while", \
+			" expecting to pay", stats[key][2]," dollars for Lyft.")
