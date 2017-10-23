@@ -16,7 +16,7 @@ sample_size = 10000
 stats = []  #for holding [walking_block_size, average_walked, average_paid] for a given walking_block_size
 
 '''for a given block size, run given number of simulations and append statistics to stats'''
-for walking_block_size in range(10):
+for walking_block_size in range(6):
 	#used to calculate average_walked and average_paid
 	total_walked = 0		
 	total_paid = 0
@@ -27,6 +27,7 @@ for walking_block_size in range(10):
 			total_walked += distance
 		else:
 			total_paid += 10
+		
 	if total_paid == 0:
 		total_paid = 1   #to avoid divide by zero, we assume minumum total payment of 1
 	#append stats for the particular walking_block_size
@@ -39,5 +40,5 @@ for x in stats:
 	print(x)
 
 print("The highest walking value can be obtained by walking ", key, " blocks.")
-print("By walking ",key," blocks, you can expect to walk ", math.floor(stats[key][1])," blocks while\
-			walking ", math.floor(stats[key][2])," dollars for Lyft.")
+print("By walking ",key," blocks, you can expect to walk ", stats[key][1]," blocks while \
+			expecting to pay", stats[key][2]," dollars for Lyft.")
