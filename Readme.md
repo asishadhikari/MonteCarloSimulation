@@ -10,8 +10,8 @@ Conduct n number of walk trails and compute on average the percentage of walks t
 
 
 ## Assumptions:
-   1. User only wants to look at walks that are less than 6 blocks
-   1. User takes Lyft only for distances greater than 4 blocks
+   1. Looking at walks upto 100 blocks is sufficient for correct deduction for optimisation. 
+   1. User takes Lyft only for distances greater than 6 blocks
    1. All lyft rides cost $10
    1. The highest ratio for total blocks walked to total money spent gives the most blocks you can walk for least amount of money
    1. Total amount paid for simulation on a block size sample is at least 1 (this is needed to avoid divide by zero when calculating average) 
@@ -19,4 +19,4 @@ Conduct n number of walk trails and compute on average the percentage of walks t
 
 ## To Dos:
 - [X] Implement in python 
-- [ ] Implement in C++
+
