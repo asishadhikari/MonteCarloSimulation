@@ -16,14 +16,14 @@ sample_size = 10000
 stats = []  #for holding [walking_block_size, average_walked, average_paid] for a given walking_block_size
 
 '''for a given block size, run given number of simulations and append statistics to stats'''
-for walking_block_size in range(6):
+for walking_block_size in range(100):
 	#used to calculate average_walked and average_paid
 	total_walked = 0		
 	total_paid = 0
 	for sample in range(sample_size):
 		coordinates = return_coordinate(walking_block_size)
 		distance = abs(coordinates[0]) + abs(coordinates[1])
-		if distance <=4:
+		if distance <=6:
 			total_walked += distance
 		else:
 			total_paid += 10
