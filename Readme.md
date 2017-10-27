@@ -2,8 +2,7 @@
 Creating a random walk program that tries to minimise the amount of money a user spends on Lyft. Doing in python
 
 ## Problem statement:
-Using Monte Carlo simulation technique, perform a random walk simulation experiment to find the longest random walk you can take so that on average you will end up 6 blocks or fewer than home (in a city arragned in a grid)
-
+Using Monte Carlo simulation technique, perform a random walk simulation to find the optimal block size for which on average, you can walk the most number of blocks with the least amount of money.
 
 ## Approach:
 Conduct n number of walk trails and compute on average the percentage of walks that are fewer than 6 blocks
