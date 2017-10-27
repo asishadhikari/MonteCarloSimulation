@@ -29,7 +29,7 @@ for walking_block_size in range(100):
 			total_paid += 10
 		
 	if total_paid == 0:
-		total_paid = 1   #to avoid divide by zero, we assume minumum total payment of 1
+		total_paid = 1   #to avoid divide by zero, we assume minumum total payment of 1 for e
 	#append stats for the particular walking_block_size
 	stats.append([walking_block_size,total_walked/sample_size,total_paid/sample_size])
 
